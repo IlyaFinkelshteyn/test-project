@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testsuites>
+  <testsuite name="github.com/rqlite/rqlite/auth" tests="7" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthLoadSingle" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthLoadMultiple" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthLoadSingleRequest" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthPermsLoadSingle" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthPermsRequestLoadSingle" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthPermsEmptyLoadSingle" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/auth" name="Test_AuthPermsNilLoadSingle" time="0.00">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/aws" tests="5" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/aws" name="Test_NewMetadataClient" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/aws" name="Test_MetadataClient_LocalIPv4" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/aws" name="Test_MetadataClient_LocalIPv4Fail" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/aws" name="Test_MetadataClient_PublicIPv4" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/aws" name="Test_MetadataClient_PublicIPv4Fail" time="0.00">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/cluster" tests="9" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_SingleJoinOK" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_SingleJoinFail" time="15.07">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_DoubleJoinOK" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_DoubleJoinOKSecondNode" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_DoubleJoinOKSecondNodeRedirect" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_NewServiceOpenClose" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_SetAPIPeer" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_SetAPIPeerNetwork" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/cluster" name="Test_SetAPIPeerFailUpdate" time="0.00">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/db" tests="20" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_DbFileCreation" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_TableCreation" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SQLiteMaster" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_LoadInMemory" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_EmptyStatements" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleSingleStatements" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleJoinStatements" time="0.06">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleSingleConcatStatements" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleMultiStatements" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleSingleMultiLineStatements" time="0.04">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleFailingStatements_Execute" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleFailingStatements_Query" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimplePragmaTableInfo" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_CommonTableExpressions" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_ForeignKeyConstraints" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_UniqueConstraints" time="0.03">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_PartialFail" time="0.03">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_SimpleTransaction" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_PartialFailTransaction" time="0.01">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/db" name="Test_Backup" time="0.03">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/disco" tests="8" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_NewClient" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterBadRequest" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterNotFound" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterForbidden" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterRequestOK" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterRequestRedirectOK" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterFollowerOK" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/disco" name="Test_ClientRegisterFollowerMultiOK" time="0.00">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/http" tests="15" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_NormalizeAddr" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_NewService" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_HasVersionHeader" time="0.02">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_HasContentTypeJSON" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_HasContentTypeOctetStream" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_HasVersionHeaderUnknown" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_404Routes" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_405Routes" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_400Routes" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_401Routes_NoBasicAuth" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_401Routes_BasicAuthBadPassword" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_401Routes_BasicAuthBadPerm" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_RegisterStatus" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_FormRedirect" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/http" name="Test_FormRedirectParam" time="0.00">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/store" tests="22" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_NumPeersEnableSingle" time="2.04">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_NumPeersDisableSingle" time="0.11">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_NumPeersJoin" time="2.16">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_ClusterMeta" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_OpenStoreSingleNode" time="0.11">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_OpenStoreCloseSingleNode" time="0.11">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeInMemExecuteQuery" time="1.63">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeInMemExecuteQueryFail" time="1.62">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeFileExecuteQuery" time="1.54">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeExecuteQueryTx" time="1.53">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeLoad" time="1.33">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeSingleCommandTrigger" time="1.68">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeLoadNoStatements" time="1.42">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeLoadEmpty" time="1.11">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeLoadChinook" time="8.21">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_MultiNodeJoinRemove" time="1.78">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_MultiNodeExecuteQuery" time="1.95">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeSnapshotOnDisk" time="1.24">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_SingleNodeSnapshotInMem" time="1.23">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_APIPeers" time="1.92">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_IsLeader" time="1.43">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/store" name="Test_State" time="1.74">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/system_test" tests="5" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/system_test" name="Test_JoinLeaderNode" time="1.98">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/system_test" name="Test_MultiNodeCluster" time="4.91">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/system_test" name="Test_SingleNode" time="1.15">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/system_test" name="Test_SingleNodeMulti" time="1.56">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/system_test" name="Test_SingleNodeCoverage" time="1.71">
+
+    </testcase>
+  </testsuite>
+  <testsuite name="github.com/rqlite/rqlite/tcp" tests="5" errors="0" failures="0" skip="0">
+    <testcase classname="github.com/rqlite/rqlite/tcp" name="TestMux" time="0.07">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/tcp" name="TestMux_Advertise" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/tcp" name="TestMux_Listen_ErrAlreadyRegistered" time="0.00">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/tcp" name="TestTLSMux" time="0.03">
+
+    </testcase>
+    <testcase classname="github.com/rqlite/rqlite/tcp" name="TestTLSMux_Fail" time="0.00">
+
+    </testcase>
+  </testsuite>
+</testsuites>
