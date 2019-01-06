@@ -1,0 +1,13 @@
+environment:
+  matrix:
+  - {}
+  - {}
+install:
+- ps: |
+    Add-AppveyorTest -Name "Test A" -Framework NUnit -Filename a.exe -Outcome Passed -Duration 1000
+    if ($env:appveyor_job_number -eq 1) {
+      $wc = New-Object 'System.Net.WebClient'
+      $wc.UploadFile("http://appveyor.local/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\junit-results.xml))
+    }
+build: off
+test: off
