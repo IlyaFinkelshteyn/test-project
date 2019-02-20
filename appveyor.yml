@@ -1,13 +1,11 @@
+version: 1.0.{build}
+image: Windows Server 2019
 environment:
-  matrix:
-  - {}
-  - {}
+  APPVEYOR_RDP_PASSWORD: iis6!dfu1234
+services: postgresql101
 install:
 - ps: |
-    Add-AppveyorTest -Name "Test A" -Framework NUnit -Filename a.exe -Outcome Passed -Duration 1000
-    if ($env:appveyor_job_number -eq 1) {
-      $wc = New-Object 'System.Net.WebClient'
-      $wc.UploadFile("http://appveyor.local/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\junit-results.xml))
-    }
+    if ((Invoke-WebRequest https://api.ipify.org).content -ne "13.83.108.89") {throw}
+    Install-Product node 8
+    Get-Service | ? {$_.name -like "post*"}
 build: off
-test: off
