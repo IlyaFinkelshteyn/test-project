@@ -11,4 +11,5 @@ install:
     #Install-Product node 8
         
 build_script:
+- docker run --rm busybox echo hello_world_busybox
 - ps: Get-Service | ? {$_.name -like "post*"}
