@@ -8,7 +8,7 @@ install:
 - ps: |
     if ((Invoke-WebRequest https://api.ipify.org).content -ne "13.83.108.89") {throw}
     write-host $env:AVVM_DOWNLOAD_URL
-    #Install-Product node 8
+    Install-Product node 8
         
 build_script:
 - docker run --rm busybox echo hello_world_busybox
