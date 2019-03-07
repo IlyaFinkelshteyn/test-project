@@ -1,15 +1,13 @@
-version: 1.0.{build}
-image: Windows Server 2019
 environment:
-  APPVEYOR_RDP_PASSWORD: iis6!dfu1234
-services:
-  - postgresql101
+  matrix:
+  - INFINITE_SLEEP: 1
+  - INFINITE_SLEEP: 2
+  - INFINITE_SLEEP: 3
+
+build: false
+
 install:
-- ps: |
-    if ((Invoke-WebRequest https://api.ipify.org).content -ne "13.83.108.89") {throw}
-    write-host $env:AVVM_DOWNLOAD_URL
-    Install-Product node 8
-        
-build_script:
-- docker run --rm busybox echo hello_world_busybox
-- ps: Get-Service | ? {$_.name -like "post*"}
+  - ps: run.ps1 -stage install
+
+test_script:
+  - ps: run.ps1
