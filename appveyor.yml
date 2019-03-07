@@ -7,7 +7,7 @@ environment:
 build: false
 
 install:
-  - ps: run.ps1 -stage install
+  - ps: .\run.ps1 -stage install
 
 test_script:
-  - ps: run.ps1
+  - ps: .\run.ps1
