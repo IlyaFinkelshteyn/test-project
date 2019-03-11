@@ -1,12 +1,12 @@
 init:
-  - pwsh: |
-       $global:var1 = "1"
-       Write-host "var1: $global:var1"
+  - pwsh: |     
+       [System.Environment]::SetEnvironmentVariable("var1", "1", "Machine")
+       Write-host "var1: $env:var1"
 
 install:
   - pwsh: |
-      Write-host "var1: $global:var1"
-      if ("1" -eq $global:var1)
+      Write-host "var1: $env:var1"
+      if ("1" -eq $env:var1)
       {
         Write-host "hello"
       }
