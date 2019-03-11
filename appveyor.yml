@@ -1,13 +1,11 @@
-environment:
-  matrix:
-  - INFINITE_SLEEP: 1
-  - INFINITE_SLEEP: 2
-  - INFINITE_SLEEP: 3
-
-build: false
+init:
+  - pwsh: |
+       $env:var1 = "1"
 
 install:
-  - ps: .\run.ps1 -stage install
-
-test_script:
-  - ps: .\run.ps1
+  - pwsh: |
+      Write-host $env:var1
+      if ("1" -eq $env:var1)
+      {
+        Write-host "hello"
+      }
