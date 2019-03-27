@@ -1,18 +1,7 @@
-environment:  
-  matrix:
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-  - {}
-install:
-- ps: fsutil file createnew testfile 300000000
-build: off
-test: off
-artifacts:
-- path: testfile
+environment:
+  apiKey:
+    secure: mD9BJbJ4vx3zjm7jf8OP6w==
+build:
+  verbosity: minimal
+after_build:
+- cmd: '\TestVariables\bin\Debug\netcoreapp2.2\dotnet TestVariables.dll'
