@@ -3,8 +3,9 @@ environment:
   apiKey:
     secure: mD9BJbJ4vx3zjm7jf8OP6w==
 build:
-  verbosity: minimal
+  verbosity: quiet
 before_build:
-- nuget restore
+- nuget restore -verbosity quiet
 after_build:
-- TestVariables\bin\Debug\netcoreapp2.2\dotnet TestVariables.dll
+- cd estVariables\bin\Debug\netcoreapp2.2
+- dotnet TestVariables\bin\Debug\netcoreapp2.2\TestVariables.dll
