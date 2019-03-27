@@ -4,7 +4,7 @@ environment:
     secure: mD9BJbJ4vx3zjm7jf8OP6w==
 build:
   verbosity: minimal
-after_build:
+before_build:
 - nuget restore
 after_build:
 - TestVariables\bin\Debug\netcoreapp2.2\dotnet TestVariables.dll
