@@ -7,5 +7,4 @@ build:
 before_build:
 - nuget restore -verbosity quiet
 after_build:
-- cd estVariables\bin\Debug\netcoreapp2.2
 - dotnet TestVariables\bin\Debug\netcoreapp2.2\TestVariables.dll
