@@ -9,4 +9,5 @@ build:
 before_build:
 - nuget restore -verbosity quiet
 after_build:
-- dotnet TestVariables\bin\Debug\netcoreapp2.2\TestVariables.dll
+- cmd: dotnet TestVariables\bin\Debug\netcoreapp2.2\TestVariables.dll
+- sh:  dotnet ./TestVariables/bin/Debug/netcoreapp2.2/TestVariables.dll
