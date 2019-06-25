@@ -23,3 +23,4 @@ MultiTarget/obj/Debug/netstandard2.0/MultiTarget.csproj.FileListAbsolute.txt
 MultiTarget/obj/MultiTarget.csproj.nuget.g.props
 MultiTarget/obj/MultiTarget.csproj.nuget.g.targets
 MultiTarget/obj/project.assets.json
+Packages/

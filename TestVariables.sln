@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVariables", "TestVariables\TestVariables.csproj", "{E6A8055F-9846-4417-A878-FAD34489E9E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTarget", "MultiTarget\MultiTarget.csproj", "{4DA18B9C-2BB2-4EDA-A06A-5842997097CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiTarget", "MultiTarget\MultiTarget.csproj", "{4DA18B9C-2BB2-4EDA-A06A-5842997097CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectNetFx", "UnitTestProjectNetFx\UnitTestProjectNetFx.csproj", "{6EDCCCE8-99D2-4EE4-A84B-08018390490D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4DA18B9C-2BB2-4EDA-A06A-5842997097CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA18B9C-2BB2-4EDA-A06A-5842997097CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA18B9C-2BB2-4EDA-A06A-5842997097CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDCCCE8-99D2-4EE4-A84B-08018390490D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDCCCE8-99D2-4EE4-A84B-08018390490D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDCCCE8-99D2-4EE4-A84B-08018390490D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDCCCE8-99D2-4EE4-A84B-08018390490D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
