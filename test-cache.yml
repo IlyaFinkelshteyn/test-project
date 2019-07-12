@@ -10,11 +10,7 @@ build_script:
         echo "creating abc..."
         New-Item -ItemType directory -Path "abc"
       }
+  - ps: Get-Content "abc\test.txt" -Tail 100
   - echo test2 >> abc\test.txt
-  - ps: |
-      Get-Content "abc\test.txt" -Tail 100
-  - ps: Get-ChildItem
-  - ps: Get-ChildItem -Path "abc"
-  - ps: $f = Get-Item "abc"
-  - ps: $f.LastWriteTime = (Get-Date)
-  - ps: Get-ChildItem
+  - ps: Get-Content "abc\test.txt" -Tail 100
+  
