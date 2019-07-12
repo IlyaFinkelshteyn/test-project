@@ -1,7 +1,7 @@
 image: Visual Studio 2017
 
 cache:
-  - abc -> build.ps1
+  - abc
 
 build_script:
   - cd
