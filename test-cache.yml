@@ -1,0 +1,23 @@
+image: Visual Studio 2017
+init:
+  - cmake --version
+branches:
+  only:
+    - master
+cache:
+  - abc -> build.ps1
+
+build_script:
+  - cd
+  - ps: |
+      if (-Not (Test-Path -Path "abc")) {
+        New-Item -ItemType directory -Path "abc"
+      }
+  - echo test2 >> abc\test.txt
+  - ps: |
+      Get-Content "abc\test.txt" -Tail 100
+  - ps: Get-ChildItem
+  - ps: Get-ChildItem -Path "abc"
+  - ps: $f = Get-Item "abc"
+  - ps: $f.LastWriteTime = (Get-Date)
+  - ps: Get-ChildItem
