@@ -1,0 +1,9 @@
+version: 1.0.{build}
+image:
+- Previous Ubuntu1604
+- Ubuntu1804
+before_build:
+- cmd: dotnet restore MsTestUnitTestProjectNetCore
+build:
+  project: MsTestUnitTestProjectNetCore
+  verbosity: minimal
